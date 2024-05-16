@@ -17,6 +17,32 @@
     --parte2: #001c50; 
 }
 
+/* Botão de retornar para o topo */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 200px;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+    
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -358,28 +384,3 @@ section {
 }
 
 
-/* Botão de retornar para o topo */
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    background-color: #000;
-    text-decoration: none;
-    border-radius: 200px;
-}
-.btn::after {
-    content: "↑";
-    font-size: 32px;
-    font-weight: bold;
-    color: aliceblue;
-    transition: margin-top 250ms;
-    
-}
-.btn:hover::after {
-    margin-top:-8px;
-}
