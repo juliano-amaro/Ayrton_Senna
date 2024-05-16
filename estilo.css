@@ -1,0 +1,385 @@
+/* Arquivo CSS - Biografia do Ayrton Senna */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+/* Variveis */
+:root {
+    --linha-topo: #e7e7e7;
+    --menu: #434343;
+    --variante-menu: #888888;
+    --parte2: #001c50; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 1080px;
+    background-color: var(--linha-topo);
+}
+
+/* Topo */
+#linha_topo {
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+#topo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    display: flex;
+    background-image: url(arquivos/fotoayrton3.webp);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#topo h1 {
+    font-size: 70px;
+    color: var(--linha-topo);
+}
+
+#topo h2 {
+    color: var(--linha-topo);
+    font-size: 40px;
+    margin: 1% 0;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    background-color: var(--parte2);
+    padding: 0 5%;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+}
+
+#menu ul li a:hover {
+    background-color: var(--variante-menu);
+}
+
+section {
+    min-height: 1000px;
+}
+
+/* Parte 1 */
+
+#parte1 {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.titulo {
+    height: 20%;
+    font-size: 30px;
+    
+}
+
+.texto {
+    height: 80%;
+    flex-direction: row;
+    display: flex;
+}
+
+.t1 {
+    width: 50%;
+    min-height: 1000px;
+    padding: 2%;
+}
+
+.t2 {
+    width: 50%;
+    min-height: 1000px;
+    padding: 2%;
+}
+
+.texto p {
+    padding: 5%;
+}
+
+/* Parte 2 */
+
+#parte2 {
+    flex-direction: column;
+    text-align: center;
+    height: 1000px;
+    background-color: var(--parte2);
+    color: var(--linha-topo);
+}
+
+.titulop2 {
+    height: 10%;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--linha-topo);
+    
+}
+
+.toleman {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.texto1 {
+    width: 80%;
+    padding-left: 5%;
+}
+
+.texto1 h1 {
+    margin-bottom: 10px;
+    border-bottom: 2px #434343 solid;
+}
+
+.imagemto {
+
+    height: 200px;
+    width: 200px;
+    
+}
+
+.imagemto img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.lotus {
+    height: 20%;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.texto2 {
+    width: 80%;
+    padding-right: 5%;
+}
+
+.texto2 h1 {
+    margin-bottom: 10px;
+    border-bottom: 2px #434343 solid;
+}
+
+.imagemlo {
+
+    height: 200px;
+    width: 200px;
+}
+
+.imagemlo img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.mclaren {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.imagemmc {
+    height: 200px;
+    width: 200px;
+}
+
+.imagemmc img{
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.willians {
+    height: 20%;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+}
+
+.imagemwi {
+    height: 200px;
+    width: 200px;
+}
+
+.imagemwi img {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Parte 3 */
+
+#parte3 {
+    max-height: 1440px;
+}
+
+.titulop3 {
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    height: 20%;
+    justify-content: center;
+    display: flex ;
+}
+
+.geral {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+
+
+.geral .cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: #FFF;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    
+}
+
+.geral .cards:hover {
+    height: 400px;
+}
+
+.geral .cards .imgrivais {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.geral .cards:hover .imgrivais {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.geral .cards .imgrivais img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.geral .cards .custom-content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 40px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.geral .cards:hover .custom-content {
+    top: 130px;
+    height: 250px;
+}
+
+.geral .cards .custom-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+.geral .cards .custom-content p {
+    color: #333;
+    padding: 10px 0;
+}
+
+.geral .cards .custom-content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: #181818;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/* Botão de retornar para o topo */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 200px;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+    
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
